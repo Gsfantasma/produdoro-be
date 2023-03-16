@@ -1,5 +1,6 @@
 package dev.wakandaacademy.produdoro.usuario.domain;
 
+
 import java.util.UUID;
 
 import javax.validation.constraints.Email;
@@ -7,7 +8,6 @@ import javax.validation.constraints.Email;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
-
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -28,9 +28,9 @@ public class Usuario {
 	private String email;
 	private ConfiguracaoUsuario configuracao;
 	@Builder.Default
-	private StatusUsuario status;
+	private StatusUsuario status = StatusUsuario.FOCO;
 	@Builder.Default
-	private Integer quantidadePomodoroPausaCurta;
-	
+	private Integer quantidadePomodorosPausaCurta = 0;
 
+	
 }

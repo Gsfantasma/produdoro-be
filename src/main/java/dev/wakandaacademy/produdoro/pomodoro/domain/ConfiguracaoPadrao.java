@@ -17,9 +17,9 @@ import lombok.NoArgsConstructor;
 @Getter
 public class ConfiguracaoPadrao {
 	private static final String CODIGO_DEFAULT = "DEFAULT";
-	@Builder.Default
 	@MongoId(targetType = FieldType.STRING)
-	private String codigo;
+	@Builder.Default
+	private String codigo = CODIGO_DEFAULT;
 	private Integer tempoMinutosFoco;
 	private Integer tempoMinutosPausaCurta;
 	private Integer tempoMinutosPausaLonga;
