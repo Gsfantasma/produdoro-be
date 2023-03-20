@@ -10,7 +10,7 @@ spring:
   data:
     mongodb:
       authentication-database: admin
-      uri: ${MONGO_DB_URI:mongodb+srv://produdoro:Dev1234@cluster0.ypmcfaz.mongodb.net/test?retryWrites=true&w=majority}
+      uri: ${MONGO_DB_URI:mongodb+srv://produdoro:Dev1234@cluster0.ypmcfaz.mongodb.net/produdoroDB?retryWrites=true&w=majority}
       auto-index-creation: true
 
 

@@ -1,11 +1,16 @@
 package dev.wakandaacademy.produdoro.pomodoro.application.service;
 
+import org.springframework.stereotype.Service;
+
 import dev.wakandaacademy.produdoro.pomodoro.domain.ConfiguracaoPadrao;
 
+@Service
 public class PomodoroService implements PomodoroApplicationService {
 
 	@Override
 	public ConfiguracaoPadrao getConfiguracaoPadrao() {
+		//TODO Implementar busca das configuracoes padroes no mongo
+		
 		return ConfiguracaoPadrao.builder()
 				.tempoMinutosFoco(25)
 				.tempoMinutosPausaCurta(5)

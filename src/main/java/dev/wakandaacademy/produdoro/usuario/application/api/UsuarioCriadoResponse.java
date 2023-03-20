@@ -2,7 +2,6 @@ package dev.wakandaacademy.produdoro.usuario.application.api;
 
 import java.util.UUID;
 
-import dev.wakandaacademy.produdoro.usuario.domain.ConfiguracaoUsuario;
 import dev.wakandaacademy.produdoro.usuario.domain.StatusUsuario;
 import dev.wakandaacademy.produdoro.usuario.domain.Usuario;
 import lombok.Value;
